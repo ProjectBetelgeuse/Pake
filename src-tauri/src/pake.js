@@ -47,8 +47,18 @@ window.addEventListener("DOMContentLoaded", (_event) => {
     #Wrapper > div.sep20,
     #Main > div.box:nth-child(8),
     #masthead-ad,
+    #app > header > div > div.menu,
     #Rightbar > div:nth-child(6) > div.sidebar_compliance {
       display: none !important;
+    }
+
+    #app > header .right .avatar.logged-in{
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    #app > header .right .avatar.logged-in:hover{
+      opacity: 1;
     }
 
     #page .main_header, .cb-layout-basic--navbar,
@@ -65,16 +75,16 @@ window.addEventListener("DOMContentLoaded", (_event) => {
        padding-top: 10px;
     }
 
-    #__next .overflow-hidden .flex.flex-1.flex-col {
-        padding-left: 0;
-    }
-
-    #__next .overflow-hidden>.hidden.bg-gray-900 {
+    #__next .overflow-hidden>.hidden.bg-gray-900 span.rounded-md.bg-yellow-200 {
       display: none;
     }
 
-    #__next .overflow-hidden main .absolute .text-xs{
-      visibility: hidden;
+    #__next .overflow-hidden>.hidden.bg-gray-900 .scrollbar-trigger{
+      padding-top: 20px;
+    }
+
+    #__next .absolute .px-3.pt-2.pb-3.text-center {
+       visibility: hidden;
     }
 
     .lark > .dashboard-sidebar, .lark > .dashboard-sidebar > .sidebar-user-info , .lark > .dashboard-sidebar .index-module_wrapper_F-Wbq{
@@ -86,10 +96,11 @@ window.addEventListener("DOMContentLoaded", (_event) => {
     }
 
     .panel.give_me .nav_view {
-      top: 154px !important;
+      top: 164px !important;
     }
 
-    .columns .column #header{
+    .columns .column #header,
+    .main > div > div.panel.give_me > div.header {
       padding-top: 30px;
     }
 
